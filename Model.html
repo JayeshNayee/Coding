@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: #EdF2F7;
+        display: flex;
+        align-items: center;
+        font-family: sans-serif;
+        justify-content: center;
+        min-height: 100vh;
+        
+    }
+    .btn{
+        background-color: rgb(115, 10, 115);
+        color: white;
+        border-radius: 10px;
+        padding:10px 40px;
+        font-weight: bold;
+        cursor: pointer
+    }
+    .modal_wrapper{
+        /* display: none; */
+    
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgb(0,0,0,0.6);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        /* pointer-events thi 100% content jatu rahe che ; */
+        pointer-events: none;
+        transition: all .3s ease-in-out;
+
+    }
+    .active{
+        opacity: 1;
+        pointer-events: auto;
+
+    }
+    .modal_wrapper.active .model_container{
+        transform:translateY(0px);
+    }
+    .model_container{
+        background-color: white;
+        width: 560px;
+        max-width: 90%;
+        padding: 20px;
+        border-radius: 4px;
+        position: relative;
+        transform: translateY(-100%);
+       transition: all 0.3s ease-in-out;
+    }
+    .model_container h2{
+        margin-bottom: 10px;
+    }
+    p{
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .action{
+        display: flex;
+        align-items: center; 
+         justify-content: flex-end; 
+    }
+    .model_container button.close{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 32px;
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .model_container button.close:hover{
+        color: rgb(115, 10, 115);
+    }
+</style>
+<body>
+    <button class="btn" id="trigger">Click me</button>
+    <div class="modal_wrapper">
+        <div class="model_container">
+            <button class="close" id="close_id">&times;</button>
+            <h2>Login now</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sed nisi consequuntur nostrum, quia quo asperiores voluptatibus quam odio sapiente nobis animi qui veritatis magnam debitis dolore non aliquam. Quia nobis illo velit ipsum sed et facilis vero fuga eius! Rem consequatur non in nihil aperiam, id cupiditate hic pariatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sed nisi consequuntur nostrum, quia quo asperiores voluptatibus quam odio sapiente nobis animi qui veritatis magnam debitis dolore non aliquam. Quia nobis illo velit ipsum sed et facilis vero fuga eius! Rem consequatur non in nihil aperiam, id cupiditate hic pariatur.</p>
+            <div class="action">
+                <button class="btn">LOGIN</button>
+            </div>
+
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        // open 
+        const trigger = document.getElementById('trigger');
+        const modalwrapper = document.querySelector('.modal_wrapper');
+        trigger.addEventListener('click',function(){
+            modalwrapper.classList.add('active');
+        });
+        // close
+
+        const closeid = document.getElementById('close_id');
+        closeid.addEventListener('click',function(){
+            modalwrapper.classList.remove('active');
+    
+        });
+    </script>
+</body>
+</html>

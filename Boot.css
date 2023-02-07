@@ -1,0 +1,122 @@
+#top_nav{
+    background-color:  rgb(181, 185, 233);
+    padding: 0 8%;
+    
+}
+#searchbox{
+    background-color: rgb(118, 128, 245);
+    border-radius: 0px;
+    color: white;
+    box-shadow: 5px 5px 5px rgb(88, 94, 168);
+}
+#searchbtn{
+    background-color: rgb(228, 116, 228);
+    position: relative;
+    z-index: 99;
+}
+#search::placeholder{
+    color: white;
+}
+
+/* banner */
+#banner{
+    background-color:rgb(148, 155, 233);
+        padding-bottom: 70px;
+}
+#bannertext h1{
+    color: white;
+    font-size: 70px;
+    margin-top: 70px;
+}
+#bannertext p{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#banner-btn-1 {
+    background-color: #00bec9;
+    border: 2px solid #00bec9;
+    color:  white;
+}
+#banner-btn-2{
+    background-color: rgb(148, 155, 233);
+    border: 2px solid white;
+    color:  white;
+    margin-left: 15px;
+}
+@media only screen  and (max-width:1100px){
+    #bannertext h1{
+        font-size: 55px; 
+    }
+    #banner{
+        padding-bottom: 70px;
+    } 
+}
+@media only screen and (max-width:770px) {
+    #bannertext h1{
+        font-size: 41px; 
+    }   
+}
+#btn_S{
+    background-color: rgb(148, 155, 233);
+    color: white;
+    /* font-size: 20px; */
+    border: 2px solid rgb(148, 155, 233)
+}
+#service-text{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#service-text p{
+    font-size: 20px;
+}
+.cnt_icon{
+    font-size: 50px;
+}
+#cunt_s{
+    background-color: rgb(148, 155, 233);
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+#cunt_s h3{
+    color: white;
+}
+@media screen and(max-width:500px) {
+    .cnt_icon{
+        font-size: 40px;
+    }
+    
+}
+/* footer */
+#footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+#footer a{
+    margin-top:40px ;
+    text-decoration: none;
+    color: white;
+}
+#footer h4{
+    color: white;
+    padding-top: 30px;
+}
+#footer-search-box{
+    background-color: yellow;
+    color: white;
+    border: 0;
+    position: relative;
+    max-width: 300px;
+}
+#footer-search-sumbit{
+    background-color: pink;
+    border: 0;
+    border-radius: 0;
+    padding: 2px 20px;
+}
+#footer-form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

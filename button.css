@@ -1,0 +1,53 @@
+
+body{
+    background-color: white;
+    font-family: roboto sans-serif;
+}
+.Sidebar{
+    position: fixed;
+    left: 0;
+    color: black;
+    width: 250px;
+    height: 100%;
+    background:rgba(3, 91, 121, 0.671)
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+.Sidebar header{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #076696;
+    user-select: none;
+}
+.Sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top:  1px solid rgba(red, green, blue, alpha);
+    border-bottom: 2px solid black;
+    transition: 4s;
+
+     
+  
+}
+ul li:hover a{
+    padding-left: 50px;
+
+}
+.Sidebar ul a li{
+    margin-left: 16px;
+
+}

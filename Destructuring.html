@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+
+    // let arr = [3,5,8,11,15];
+
+    // let a = arr[0];
+    // let b = arr[1];
+
+    // let [a,b, ,...reset]= arr;
+    // console.log(a, b,reset);
+
+    // let {a,b} = {a:1 , b: 5};
+    // console.log(a,b);
+
+    /// Spread Operator
+
+    /*let array = [1,23,4];
+
+    // let obj = {...array};
+    //  console.log(obj);
+    function sum(v1,v2,v3){
+        return v1+v2+v3;
+    }
+    console.log(sum(...array));*/
+
+    // let obj = {
+    //     name : "Jayuu",
+    //     Company: "IBM",
+    //     address :"kadi"
+    // }
+    // console.log({...obj , name: "jayesh"})
+    // // Print another way
+    // console.log({name:"Jayesh" , ...obj});
+
+
+    //practice :
+    // let user = ["Jayesh", 50 , "kadi","LJ","SG Highway","ICT"];
+    // let[name,...args] = user;    console.log(name,args);
+
+    // function user([name, age, city]){
+    //     console.log(name);
+    //     console.log(age);
+    //     console.log(city);
+    // }
+    // user(["jay", 22 , "kadi"]);
+
+    
+        const moreStudents = [
+            'Chris',
+            ['Ahmad', 'Antigoni'],
+            ['Toby', 'Sam']
+        ];
+
+        // Write your code here
+        const [student1, [student2, student3], [student4, student5]] = moreStudents;
+
+        console.log(student1, student2, student3, student4, student5);
+
+
+
+
+
+
+
+</script>
+
+</html>

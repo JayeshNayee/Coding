@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="parent">
+        <h1 id="head" class="head">Dom in the javascript</h1>
+        <h3 id="h3">This is my sub heading</h3>
+    </div>
+    <!-- put the content in the div -->
+    <div class="put_the_ele">
+
+    </div>
+
+    <h1 id="ER_jn">ER.jayesh nayee</h1>
+    <!-- <button id ="Click">Click me</button> -->
+
+
+
+        
+        <img src="bulb-off.jpeg" alt="" id="bulb">
+        <button id="switch">TURN - ON</button>
+    <script>
+     // Method : 1 by id
+    /* let name = document.getElementById('head');
+     console.log(name);*/
+    
+    // Method : 2 by tag name like collecton { array type }
+        /*  let name = document.getElementsByTagName('h1');
+          console.log(name);*/
+
+    // Method : 3 by  class name
+        /* let name = document.getElementsByClassName('head');
+         console.log(name);*/
+
+     // Method : 4 by querySelector ma ' # id_name ' or ' . class_name ' no use thya
+       /*let name = document.querySelector('.head');
+        console.log(name);*/
+
+     // Method : 5  by querySelectorAll
+        // let head = document.querySelector('.head');
+        // 5.1 querySelector ni parentNode mehtods
+
+        // const parent = head.parentNode;
+        // console.log(parent);    
+
+        // 5.2  childNodes
+        // const child = head.childNodes;
+        // console.log(child);
+
+        // 5.3 nextElementSibling
+
+      //  const nextElementSibling = head.nextElementSibling;
+        // console.log(nextElementSibling);
+
+        // 5.4 previousElementSibling
+        const head1 =  document.querySelector('h3');
+        const previousElementSibling = head1.previousElementSibling;
+        // console.log(previousElementSibling);
+
+        // Manipulations
+
+        /*let heading = document.querySelector('.head');
+        heading.innerHTML  = "Learn this js";
+        heading.style.color ="red";
+        heading.style.fontSize = "30px";
+        heading.classList.add('title');
+        heading.classList.remove('head');*/
+
+
+        // create elememts make a h1
+
+        // const heading = document.createElement('h3');
+        // // console.log(heading);
+        // heading.innerHTML = "Jayesh is awsome!..";
+        // let put = document.querySelector('.put_the_ele');
+        // put.appendChild(heading);
+
+        // Dom events **************************** 
+
+        // let change  = document.getElementById('ER_jn');
+        // let Click = document.getElementById('Click').onclick = function(){
+        //     change.style.color = "red";
+        //     change.style.fontSize = "50px";
+        //     console.log(event)
+        // };
+
+        // Project:1
+        let bulb = document.getElementById('bulb');
+            let bulbSwitch = document.getElementById('switch');
+            document.getElementById('switch').onclick = function()
+     { 
+        if(bulb.src.match('off')){
+            bulb.src = 'bulb-on.jpeg';
+            bulbSwitch.innerHTML = 'TURN - OFF';
+            // console.log(bulb.src);
+        }
+        else{
+            bulb.src = 'bulb-off.jpeg';
+            bulbSwitch.innerHTML = 'TURN - ON';
+            // console.log(bulb.src);
+        }
+
+    }
+
+    // setTimeout*******************************
+
+    setTimeout(() => {
+        alert("Hello");
+    }, 4000);
+    
+    // setInterval(() => {
+    //     alert("Huu")
+    //}, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>

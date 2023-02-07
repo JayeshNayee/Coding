@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Project - 1</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="1.css"> -->
+   <!-- cdn -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- cdn and -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<style>
+</style>
+<body>
+    <!-- Navbar  starting -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+     <!-- Nav ending -->
+
+     <!-- slider starting -->
+
+     <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade mt-5 mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="center pizz.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="center pizz.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+     <!-- slider ending -->
+
+     <div class="container-fluid">
+          <div class="row">
+                  <div class="col-12">
+                    <h3 class="display-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Doloribus, dolor!</h3>
+                  </div>
+           </div>
+              <div class="row justify-content-evenly pt-3">
+              <div class="col-md-3 text-center mt-5 ">
+              <h1><i class="bi bi-calendar-event-fill text-info"></i></h1>
+              <h5>Built for developers</h5>
+              <p>Lorem ipsum dolor sit amet <br> ipsum dolor sit amet.</p>
+              </div>
+              <div class="col-md-3 text-center mt-5">
+                <h1><i class="bi bi-stickies-fill text-danger"></i></h1>
+                <h5>Built for developers</h5>
+              <p>Lorem ipsum dolor sit amet <br> ipsum dolor sit amet.</p>
+              </div>
+              <div class="col-md-3 text-center mt-5">
+              <h1><i class="bi bi-file-earmark-check text-primary"></i></h1>
+              <h5>Built for developers</h5>
+              <p>Lorem ipsum dolor sit amet <br> ipsum dolor sit amet.</p>
+              </div>
+          </div>
+          <hr>
+          <!-- growth -->
+          <div class="row justify-content-evenly pt-3 pb-5">
+            <div class="col-md-5 pt-3">
+              <img src="bur.jpg" alt=""class="img-fluid">
+            </div>
+            <div class="col-md-5 pt-3">
+                      <h5 class="mt-3">App development</h5>
+                      <div class="progress">
+                        <div class="progress-bar bg-success " role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <h5 class="mt-3">Web development</h5>
+                      <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" aria-label="Info example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <h5 class="mt-3">Software development</h5>
+        
+                      <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-label="Warning example" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <h5 class="mt-3">SEO</h5>
+                      <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 85%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <h5 class="mt-3">Trading </h5>
+                      <div class="progress">
+                        <div class="progress-bar bg-blue" role="progressbar" aria-label="Blue example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+            </div>
+          </div>
+          <!-- growth end -->
+          <!-- last 2 section-->
+          <div class="row mt-3 justify-content-evenly" style="background-color: #f1f1f1;">
+            <div class="col-md-5">
+              <h3 class="display-6 text-center">Contact us</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Commnet </label>
+                  <input type="text" class="form-control" id="name">
+                  <div>Describe your problem</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                
+              
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            
+            <div class="col-md-5 pb-5">
+              <h3 class="display-6 text-center">Address</h3>
+              <p>27-B Sarswati society thol road <br> Pani ni taki pase kadi <br> <i class="bi bi-telephone text-black"></i> 7698577423</p>
+              <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7328.964619151367!2d72.32476596410811!3d23.298253240234562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c18078321e28f%3A0xdca9292f4989571c!2sKadi%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1669278029754!5m2!1sen!2sin"  style="border:0;"
+              style="width: 100%;" allowfullscreen="" height="250" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <hr>
+        <!-- FAQs starting -->
+        <div class="row justify-content-evenly mb-3">
+          <div class="col-md-10">
+            <h3 class="text-center">FAQs</h3>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes .
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes .
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer -->
+          <div class="row justify-content-evenly bg-black text-white pt-3 pb-5">
+            <div class="col-md-3 ">
+             <h4 class="pb-3"> CODING WITH JAYESH</h4>
+              <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nobis! Maiores, aut vero. Reiciendis hic neque, animi repellat consequatur voluptatibus? </p></div>
+            <div class="col-md-3">
+          <h4>Important Links</h4>
+          <p> home <br> Abour us <br> our text-danger <br> conjhfbv </p> 
+            </div>
+            <div class="col-md-3">
+              <h4>contct us</h4>
+              <p>27-B Sarswati society thol road <br> Pani ni taki pase kadi <br> <i class="bi bi-telephone text-white"></i> 7698577423</p>
+            </div>
+          </div>
+          <!-- copyRight -->
+          <div class="row">
+            <div class="col-md text-center bg-secondary text-black">
+              <p>copyright 2002-2022 by Jayesh ka Code All Right Reserveds</p>
+            </div>
+          </div>
+     </div>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+</html>

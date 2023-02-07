@@ -1,0 +1,16 @@
+p{
+    position: relative;
+}
+span{
+    border: 5px;
+    border-radius: 100px;
+    color: black;
+}
+#pd{
+    font-weight:bold;
+ border-radius: 5px;
+ border-color: black;
+ background-color: white;
+margin: 10px;
+padding-bottom: 10px;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <table class="table">
+    <thead>
+      <tr>
+        <input type=""name="first">
+        <th scope="col  ">#</th>
+        <th scope="col" id="first">First</th>
+        <th scope="col" class="box" id ="last">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td id="First">Mark</td>
+        <td>Otto</td>
+        <td class="this is me">@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td id="First">Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+      <caption>Data of the table</caption>
+    </tbody>
+  </table>
+
+
+  <!-- <script src="Hosting.js"> -->
+<script>    
+    /* alert("Please enter your phone number ");
+    // let num = prompt("Enter your number ..");
+    // let wrt = confirm("DO YOU WANT TO THIS PAGE");
+    // if(wrt){
+    //   document.write(num);
+    //   alert("Successfully");
+    // }
+    // else{
+    //   document.write("Please Enter try again..");}
+  */
+    // alert("Enter color name");
+    // let color = prompt("type a color ");
+    // document.body.style.background = color;
+    /*class 34
+     var a = document.body.firstChild;
+     console.log(a.parentElement);
+     console.log(a.parentNode);
+    console.log(a.firstChild.nextSibling);
+    console.log(a);*/
+
+    /*var a = document.body;
+    //first child
+    console.log('first child ',a.firstChild);
+    //first child element
+     let b = document.body.firstElementChild;
+     console.log('first element child ',b)
+     let c = document.body.lastElementChild;
+     console.log('last element child ',c);*/
+/* TABLE 
+    var t = document.body.firstElementChild;
+
+    console.log(t);
+    console.log(t.rows);
+    console.log(t.caption);
+    console.log(t.tHead);
+    console.log(t.tHead.firstElementChild);
+    console.log(t.tFoot);
+    console.log(t.tBodies);
+    console.log(t.rows[0].rowIndex);*/
+   let first = document.getElementById('first');
+   first.style.color = 'red';
+  //  console.log(first);
+  /*querySelectorAll ne aek sathe same name vala class as wel as id ne iterate kari saky che(all elements cheack kare)
+  let firstId = document.querySelectorAll('#First');
+  firstId[0].style.color = 'blue';
+  firstId[1].style.color = 'purple';
+  console.log(firstId);*/
+
+  /*
+  document.querySelector('.this').style.color= 'yellow';
+ //first word cheack kare
+  document.querySelector('.this').style.background= 'red';*/
+
+ /*  
+ // tag name thi search karva
+ let ans = document.querySelector('tHead').getElementsByTagName('td')
+  console.log(ans);*/
+
+ /*
+ input tag ma name thi search kare
+  let name = document.getElementsByName('first');
+  console.log(name)*/
+  // console.log(document.getElementById('last').matches('.bo1'))
+
+
+
+  /*** Practice callBack */
+
+  // function register(callback){
+  //   setTimeout(()=>{
+  //     console.log("Login end");
+  //     callback();
+  //   },1000)
+  // }
+  // function email(){
+  //   setTimeout(()=>{
+  //     console.log("Email end");
+  //   },2000)
+  
+  // }
+  // function login(){
+  //   setTimeout(()=>{
+  //     console.log("Register end");
+  //   },3000)
+   
+  // }
+  // function displayUserData(){
+  // setTimeout(()=>{
+  //   console.log("Display user data end");
+  // },2000)
+  // }
+  // function gotUserData(){
+  //   setTimeout(()=>{
+  //     console.log("Got user data end");
+  //   },3000);
+  // }
+  // register()
+  // email();
+  // login();
+  // displayUserData();
+  //gotUserData();
+
+  // *********** Closers
+
+
+  const username = "jayesh";
+  function login(){
+
+    const passWord =  "J@yesh02";
+    console.log(`${username} is loging in using ${passWord}`);
+  }
+  login();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  </script>
+</body>
+</html>

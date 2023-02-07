@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div class="parent">
+        <h1 id="head" class="head">Dom in the javascript</h1>
+        <h3 id="h3">This is my sub heading</h3>
+    </div>
+    <!-- put the content in the div -->
+    <div class="put_the_ele">
+
+    </div>
+
+    <h1 id="ER_jn">ER.jayesh nayee</h1>
+    <!-- <button id ="Click">Click me</button> -->
+
+
+
+
+    <img src="bulb-off.jpeg" alt="" id="bulb">
+    <button id="switch">TURN - ON</button>
+    <script>
+        // Method : 1 by id
+        /* let name = document.getElementById('head');
+         console.log(name);*/
+
+        // Method : 2 by tag name like collecton { array type }
+        /*  let name = document.getElementsByTagName('h1');
+          console.log(name);*/
+
+        // Method : 3 by  class name
+        /* let name = document.getElementsByClassName('head');
+         console.log(name);*/
+
+        // Method : 4 by querySelector ma ' # id_name ' or ' . class_name ' no use thya
+        /*let name = document.querySelector('.head');
+         console.log(name);*/
+
+        // Method : 5  by querySelectorAll
+        // let head = document.querySelector('.head');
+        // 5.1 querySelector ni parentNode mehtods
+
+        // const parent = head.parentNode;
+        // console.log(parent);    
+
+        // 5.2  childNodes
+        // const child = head.childNodes;
+        // console.log(child);
+
+        // 5.3 nextElementSibling
+
+        //  const nextElementSibling = head.nextElementSibling;
+        // console.log(nextElementSibling);
+
+        // 5.4 previousElementSibling
+        const head1 = document.querySelector('h3');
+        const previousElementSibling = head1.previousElementSibling;
+        // console.log(previousElementSibling);
+
+        // Manipulations
+
+        /*let heading = document.querySelector('.head');
+        heading.innerHTML  = "Learn this js";
+        heading.style.color ="red";
+        heading.style.fontSize = "30px";
+        heading.classList.add('title');
+        heading.classList.remove('head');*/
+
+
+        // create elememts make a h1
+
+        // const heading = document.createElement('h3');
+        // // console.log(heading);
+        // heading.innerHTML = "Jayesh is awsome!..";
+        // let put = document.querySelector('.put_the_ele');
+        // put.appendChild(heading);
+
+        // Dom events **************************** 
+
+        // let change  = document.getElementById('ER_jn');
+        // let Click = document.getElementById('Click').onclick = function(){
+        //     change.style.color = "red";
+        //     change.style.fontSize = "50px";
+        //     console.log(event)
+        // };
+
+        // Project:1
+        let bulb = document.getElementById('bulb');
+        let bulbSwitch = document.getElementById('switch');
+        document.getElementById('switch').onclick = function () {
+            if (bulb.src.match('off')) {
+                bulb.src = 'bulb-on.jpeg';
+                bulbSwitch.innerHTML = 'TURN - OFF';
+                // console.log(bulb.src);
+            }
+            else {
+                bulb.src = 'bulb-off.jpeg';
+                bulbSwitch.innerHTML = 'TURN - ON';
+                // console.log(bulb.src);
+            }
+
+        }
+        // document.write("InnerHTML na jevu che");
+        // setTimeout*******************************
+        /*let a =  setTimeout(() => {
+              alert("Jayesh is the good boy");
+         }, 3000);
+          let b = prompt("Do you want to run the setTimeout");
+         if(b=='yes'){
+             clearTimeout(a);
+         }
+         console.log(a);*/
+
+        // topic 2  function through
+        // function sum(a,b){
+        //     console.log(a+b);
+        // }
+        // // setTimeout(sum,5000,10,2);
+        // // argument last ma avve function nu `name , time , argument`
+
+
+        //  setInterval(sum,1000,1,30);
+        /*
+         let a  =setInterval(() => {
+            alert("It is the done");
+         }, 2000);
+        
+         let b = prompt("Type to the list");
+         if(b=='yes'){
+            clearInterval(a);
+         }*/
+
+
+        /*localStorage
+
+         let key  = prompt("Enter key");
+         let val = prompt("Enter value");
+         localStorage.setItem(key,val);
+         console.log(`The value is ${val} at ${key}`);
+
+
+        let key = prompt("Enter key you wnat to set");
+        let val = prompt("Enter value you want to set");
+        localStorage.setItem(key,val);
+        console.log(`The key  is ${key} for value is ${localStorage.getItem(key)}`);
+        if (key == "red" || key == "black") {
+            localStorage.removeItem(key);
+        }*/
+
+        /*sessionStorage
+        let key = prompt('Enter the key ');
+        let val  = prompt("Enter the value");
+        sessionStorage.setItem(key,val);   
+        console.log(` value is ${sessionStorage.getItem(key)}  for the ${key}`); 
+        if(key=="red"|| key =="blue"){
+            sessionStorage.removeItem(key);
+        }   
+        if(key==0){
+            sessionStorage.clear();
+        } */
+        // koi key value ne change karvi hoy tyre use thy che window.onstorage
+        // window.onstorage = (e)=>{
+        //     alert("Changed");
+        //     console.log(e);
+        // }
+
+
+        //  For-in  loop Use in OBJECT ni key ne iterate karva
+        // var obj = {
+        //     firstName : 'Jayesh',
+        //     LastName:'Nayee',
+        //     Roll:'019'
+        // }
+        // for (const key of obj) {
+        //     console.log(obj);
+        //  }
+        //forEach
+        // let array = ["jayesh","Ram","Syam","xyz"];
+        // array.forEach(function(value,index){
+        //     document.write(index +":"+ value);
+        // });
+
+        // Array.from string ne areay ma fervi nakhe
+        // let string ="jayesh";
+        // let array = Array.from(string);
+        // // console.log(array);
+        //     document.write(array);
+
+        /*let array = ["jayesh","Ram","Syam","xyz"];
+        for(let name in array){
+            console.log(name);
+        }
+        for of loop iterable string print kare
+        for in loop iterable index print kare & OBJECT ni key ne iterate karva
+        for(let name of array){
+            console.log(name);
+        }*/
+        // Hosting in javascript**************************************************
+
+                        //     greet();
+                        //     function greet(){
+                        //         console.log("Good day");
+                        //     }
+                        //   let a= 9;
+                        // console.log(a)        
+
+    // *********************Scope  global variable are use in function outside and inside
+
+  //local variable are use in function inside.
+
+
+  // var a = "Jayesh" global varibal;  
+  //  function hello(){
+  //   let a = "Jayesh";
+  //   console.log(a);
+  //  }
+  //  hello();
+  //  console.log(a);
+
+// let and const are block lavel scope but var is global scope
+
+  // {
+  //   let a = 6;
+  // }
+  // console.log(a);
+
+
+//   var Hosting     *************
+//  console.log(a);
+//   var a;
+
+// console.log(a);
+// var a;
+// a= 4;
+
+
+// console.log(a);
+// var a = 3;
+
+// let const Hosting *************** 
+//1 
+// console.log(a);
+// let a = 3;
+// 2
+// console.log(a);
+// let a;
+// a= 3;
+
+
+
+// closers
+
+function returnFun(){
+
+ const x = ()=>
+ {
+    let a  = 1;
+    console.log(a);
+    const y =()=>{
+        let a  = 2;
+        console.log(a);
+        const z = ()=>{
+            let a  = 3;
+            console.log(a);
+        }
+        z();
+    }
+    y();
+ }
+ return x;
+}
+
+let a  = returnFun();
+a();
+    </script>
+</body>
+
+</html>
